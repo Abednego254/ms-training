@@ -7,7 +7,7 @@ Ext.define('MsTraining.view.posts.PostGrid', {
         type: 'posts'
     },
     tbar: {
-        overflowHandler:'menu',
+        overflowHandler: 'menu',
         items: [
 
             {
@@ -32,22 +32,6 @@ Ext.define('MsTraining.view.posts.PostGrid', {
                     select: 'onUserSelected'
                 }
             },
-            {
-                text: 'Add Post',
-                xtype: 'button',
-                iconCls: 'fas fa-plus',
-                listeners: {
-                    click: 'onAddPostClicked'
-                }
-            },
-            {
-                text: 'Add Post',
-                xtype: 'button',
-                iconCls: 'fas fa-plus',
-                listeners: {
-                    click: 'onAddPostClicked'
-                }
-            }, '->',
             {
                 text: 'Add Post',
                 xtype: 'button',
@@ -92,7 +76,7 @@ Ext.define('MsTraining.view.posts.PostGrid', {
 
         ]
     }
-   ,
+    ,
     columns: [
         { dataIndex: '_id', text: 'ID' },
         { dataIndex: 'title', text: 'Title', flex: 1 },

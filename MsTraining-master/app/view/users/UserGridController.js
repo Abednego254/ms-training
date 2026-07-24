@@ -45,5 +45,8 @@ Ext.define('MsTraining.view.users.UserGridController', {
         let record = grid.getStore().findRecord('_id', id)
         vm.set("record", record)
         grid.getSelectionModel().select(record)
+    },
+    onTestAlert: function (btn) {
+        Ext.Msg.alert('Greeting', 'Hello! You clicked on the Test Alert Button!');
     }
 })
