@@ -1,19 +1,19 @@
-Ext.define('MsTraining.store.Menu',{
-    extend:'Ext.data.TreeStore',
-    alias:'store.menu',
+Ext.define('MsTraining.store.Menu', {
+    extend: 'Ext.data.TreeStore',
+    alias: 'store.menu',
     root: {
         text: 'Root',
         expanded: true,
         children: [
             {
                 text: 'Security',
-                iconCls:'fas fa-users-cog',
-                children:[
+                iconCls: 'fas fa-users-cog',
+                children: [
                     {
-                        text:'Users',
-                        iconCls:'fa fa-users',
-                        className:'users',
-                        leaf:true
+                        text: 'Users',
+                        iconCls: 'fa fa-users',
+                        className: 'users',
+                        leaf: true
                     },
                     {
                         text: 'Todos',
@@ -22,11 +22,11 @@ Ext.define('MsTraining.store.Menu',{
                         leaf: true
                     }
                 ]
-              
+
             },
             {
                 text: 'Static Data',
-                iconCls:'fa fa-database fa-lg',
+                iconCls: 'fa fa-database fa-lg',
                 children: [
                     {
                         text: 'Posts',
@@ -35,17 +35,23 @@ Ext.define('MsTraining.store.Menu',{
                         leaf: true
                     },
                     {
+                        text: 'Products',
+                        iconCls: 'fa fa-users',
+                        className: 'products',
+                        leaf: true
+                    },
+                    {
                         text: 'Personnel',
                         iconCls: 'fa fa-users',
-                        leaf:true,
+                        leaf: true,
                         className: 'mainlist',
                     }
                 ]
 
             },
-             {
+            {
                 text: 'Review',
-                iconCls:'fa fa-database fa-lg',
+                iconCls: 'fa fa-database fa-lg',
                 children: [
                     {
                         text: 'Review Panel',
@@ -53,11 +59,11 @@ Ext.define('MsTraining.store.Menu',{
                         className: 'reviewpanel',
                         leaf: true
                     }
-                   
+
                 ]
 
             },
-            
+
         ]
     }
 })
