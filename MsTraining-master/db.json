@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "_id": 1,
+      "userId": 1,
+      "title": "First Sample Post",
+      "body": "This is sample post #1."
+    },
+    {
+      "id": 17,
+      "_id": 17,
+      "userId": 1,
+      "title": "Sample Post Title",
+      "body": "This is a sample post body for Ext JS testing."
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "_id": 1,
+      "userId": 1,
+      "title": "Complete Ext JS Training",
+      "completed": false
+    }
+  ]
+}
