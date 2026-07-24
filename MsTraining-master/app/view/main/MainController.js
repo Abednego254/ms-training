@@ -9,7 +9,7 @@ Ext.define('MsTraining.view.main.MainController', {
 
     routes: {
         'home': 'onHomeRoute',
-        'users|reviewpanel|mainlist|postgrid|todogrid': {
+        'users|reviewpanel|mainlist|postgrid|todogrid|products': {
             action: 'onRoute',
             before: 'onBeforeRoute'
         },
@@ -21,11 +21,11 @@ Ext.define('MsTraining.view.main.MainController', {
             }
         }
     },
-    onUserSelect:function(id){
+    onUserSelect: function (id) {
         //fire an event to select the record on the user grid
-        this.getUserGrid().fireEvent('selectuser',id)
+        this.getUserGrid().fireEvent('selectuser', id)
     },
-    onBeforeUserSelect: function (id, action){
+    onBeforeUserSelect: function (id, action) {
         var me = this,
             hash = 'users',
             mainMenu = me.getMainMenu();
@@ -38,16 +38,16 @@ Ext.define('MsTraining.view.main.MainController', {
         let store = grid.getStore()
         //find record with the id
         let record = store.findRecord('_id', id);
-        if(record){
+        if (record) {
             action.resume()
-              
-        }else{
+
+        } else {
             action.stop()
         }
-       
+
 
     }
-,
+    ,
 
 
     onHomeRoute: function () {
