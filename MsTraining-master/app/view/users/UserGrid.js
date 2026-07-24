@@ -1,7 +1,7 @@
 Ext.define('MsTraining.view.users.UserGrid', {
     extend: 'Ext.grid.GridPanel',
     xtype: 'usergrid',
-    reference:'usergrid',
+    reference: 'usergrid',
     controller: 'usergridcontroller',
     store: {
         type: 'users'
@@ -16,7 +16,7 @@ Ext.define('MsTraining.view.users.UserGrid', {
         selType: 'cellmodel',
     },
     columns: [
-            {xtype: 'rownumberer'},
+        { xtype: 'rownumberer' },
         {
             dataIndex: '_id',
             text: 'ID'
@@ -41,6 +41,11 @@ Ext.define('MsTraining.view.users.UserGrid', {
             }
         },
         {
+            dataIndex: 'phone',
+            text: 'Phone Number',
+            flex: 2
+        },
+        {
             dataIndex: 'city',
             text: 'City',
             flex: 2
@@ -54,7 +59,10 @@ Ext.define('MsTraining.view.users.UserGrid', {
             text: 'Model Binding',
             handler: 'onModelBinding'
         },
-        // '->',
+        {
+            text: 'Test Alert',
+            handler: 'onTestAlert'
+        },
         {
             xtype: 'tbfill'
         },
@@ -66,16 +74,16 @@ Ext.define('MsTraining.view.users.UserGrid', {
             }
         }
     ],
-   
+
     bbar: {
         xtype: 'pagingtoolbar',
         displayInfo: true
     },
     listeners: {
         cellclick: 'onUserGridCellClick',
-        celldblclick:'onUserGridCellDblClick',
-        cellcontextmenu:'onUserGridCellContextMenu',
-        selectuser:'onSelectUser'
+        celldblclick: 'onUserGridCellDblClick',
+        cellcontextmenu: 'onUserGridCellContextMenu',
+        selectuser: 'onSelectUser'
     }
 
 })
