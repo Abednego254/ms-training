@@ -1,27 +1,46 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "_id": 1,
       "userId": 1,
       "title": "First Sample Post",
       "body": "This is sample post #1."
     },
     {
-      "id": 17,
+      "id": "17",
       "_id": 17,
       "userId": 1,
       "title": "Sample Post Title",
       "body": "This is a sample post body for Ext JS testing."
+    },
+    {
+      "_id": "Post id",
+      "dateOfBirth": "2008-07-23T21:00:00.000Z",
+      "userId": "1",
+      "title": "2 years now",
+      "body": "This body",
+      "category": "News",
+      "id": "QInyerWxayw"
+    },
+    {
+      "_id": "1",
+      "dateOfBirth": "2008-01-31T21:00:00.000Z",
+      "userId": "2",
+      "title": "good",
+      "body": "body",
+      "category": "Tutorial",
+      "id": "wWRfjQ305Tc"
     }
   ],
   "todos": [
     {
-      "id": 1,
+      "id": "1",
       "_id": 1,
       "userId": 1,
       "title": "Complete Ext JS Training",
       "completed": false
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
