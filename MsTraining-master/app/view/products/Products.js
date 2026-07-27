@@ -16,12 +16,7 @@ Ext.define('MsTraining.view.products.Products', {
     items: [{
         xtype: 'grid',
         store: {
-            fields: ['id', 'name', 'category', 'price'],
-            data: [
-                { id: 1, name: 'Laptop Pro', category: 'Electronics', price: 1200 },
-                { id: 2, name: 'Wireless Mouse', category: 'Accessories', price: 25 },
-                { id: 3, name: 'HD Monitor', category: 'Electronics', price: 300 }
-            ]
+            type: 'products'
         },
         columns: [
             { text: 'ID', dataIndex: 'id', width: 60 },

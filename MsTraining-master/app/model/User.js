@@ -6,6 +6,7 @@ Ext.define('MsTraining.model.User', {
         'name',
         'username',
         'email',
+        'phone',
         'street',
         'suite',
         'city',
